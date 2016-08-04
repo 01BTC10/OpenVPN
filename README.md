@@ -18,6 +18,3 @@ How to Install:
 - Run adblock.sh
 - Run client.sh
 - Transfer the configuration files to your host
-
-Old Files:
-https://github.com/jonathanwalker/openvpn

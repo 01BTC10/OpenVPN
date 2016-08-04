@@ -1,5 +1,6 @@
 #!/bin/bash
 # Main script to deploy OpenVPN and Unbound
+# This will configure and harden the server :)
 
 #Test if tun/tap is enabled
 if test ! -e "/dev/net/tun"; then

@@ -1,5 +1,6 @@
 #!/bin/bash
 # Block advertisements, malware, and tracking domains using unbound recursive DNS
+# Some lists are for personal use only
 
 # Copy adblocker.sh to adblock
 \cp -f adblock.sh /opt/adblock.sh

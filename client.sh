@@ -1,5 +1,6 @@
 #!/bin/bash
 # Setup client certificates for OpenVPN
+# You can run this to generate new certs as well
 
 function input {
 	# Get IP address

@@ -4,7 +4,7 @@ This script allows you to install and configure OpenVPN on Centos 7. This script
 
 Make sure you run all the scripts!
 
-Security:
+##Security:
 - Minimum TLS Version 1.2
 - SHA512 HMAC Authentication
 - TLS Authentication Secret
@@ -13,7 +13,7 @@ Security:
 - 4096-bit RSA
 - TLS ciphers TLS-ECDHE-RSA-WITH-AES-128-GCM-SHA256:TLS-ECDHE-ECDSA-WITH-AES-128-GCM-SHA256:TLS-ECDHE-RSA-WITH-AES-256-GCM-SHA384:TLS-DHE-RSA-WITH-AES-256-CBC-SHA256
 
-How to Install:
+##How to Install:
 - Run openvpn.sh
 - Run adblock.sh
 - Run client.sh

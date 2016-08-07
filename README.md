@@ -1,4 +1,4 @@
-OpenVPN Installation and Configuration
+#OpenVPN Installation and Configuration
 
 This script allows you to install and configure OpenVPN on Centos 7. This script sets up openvpn configurations, unbound recursive dns setup, blocks advertisements/malware/tracking domains by DNS, and employs extremely hardened settings.
 

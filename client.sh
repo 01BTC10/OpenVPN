@@ -127,6 +127,11 @@ function genconf {
 	rm -f encFileLocations
 }
 
+# Check if running as root
+if [ "$(id -u)" != "0" ]; then
+  exec sudo "$0" "$@"
+fi
+
 # Run the setup
 input
 genconf

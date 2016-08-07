@@ -2,10 +2,15 @@
 # Main script to deploy OpenVPN and Unbound
 # This will configure and harden the server :)
 
-#Test if tun/tap is enabled
+# Test if tun/tap is enabled
 if test ! -e "/dev/net/tun"; then
         echo "TUN/TAP is not enabled. Please enable for this to work."
 		exit
+fi
+
+# Check if running as root
+if [ "$(id -u)" != "0" ]; then
+  exec sudo "$0" "$@"
 fi
 
 # Install Required Packages

@@ -2,6 +2,11 @@
 # Block advertisements, malware, and tracking domains using unbound recursive DNS
 # Some lists are for personal use only
 
+# Check if running as root
+if [ "$(id -u)" != "0" ]; then
+  exec sudo "$0" "$@"
+fi
+
 # Copy adblocker.sh to adblock
 \cp -f adblock.sh /opt/adblock.sh
 

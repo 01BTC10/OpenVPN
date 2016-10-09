@@ -61,12 +61,9 @@ function genconf {
 	touch fileLocations
 	touch encFileLocations
 
-	# Create gpg key
-	gpg --gen-key > /dev/null 2>&1
-	
 	# Generate client certificate
 	echo "Note: You will be prompted for a password to encrypt individual configuration files. Unencrypted files will remain."
-	echo -n "Number of clients: " 
+	echo -n "Number of clients: "
 	read repeat
 	for i in $(seq 1 $repeat);do
 		# Get the client file name

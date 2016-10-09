@@ -81,6 +81,7 @@ function genconf {
 		echo "proto tcp" >> /home/$superUser/$clientDevice.ovpn
 		echo "remote $IP $port" >> /home/$superUser/$clientDevice.ovpn
 		echo "dhcp-option DNS 10.8.0.1" >> /home/$superUser/$clientDevice.ovpn
+    echo "block-outside-dns" >> /home/$superUser/$clientDevice.ovpn
 		echo "resolv-retry infinite" >> /home/$superUser/$clientDevice.ovpn
 		echo "nobind" >> /home/$superUser/$clientDevice.ovpn
 		echo "persist-key" >> /home/$superUser/$clientDevice.ovpn
